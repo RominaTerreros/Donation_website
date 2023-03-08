@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+}   
+body{
+    background-color: rgb(141,186,184) !important;
+}
+.seccion{
+    width: 400px;
+    background: rgba(23,37,42,0.7);
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    color: white;
+}
+.seccion h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.entrada{
+    background: #EEF9F8;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(43, 122, 120);
+}
+.Option{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.Sub{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.combo{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+	width: 70%;
+	cursor: pointer;
+  	padding: 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 2px solid rgb(33, 80, 81);
+	border-radius: 0;
+	background: #EEF9F8;
+	color: #080101;
+	font-size: 15px;
+    text-align: center;
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+    
+}
+.combo:hover{
+	background: rgba(43, 122, 120);
+    color: white;
+}
+#color{
+    width: 20%;
+    margin: auto;
+}
+
+#Benviar{
+    font-size: 15px;
+    margin-top: 10px;
+    position: relative;
+    background: rgb(43, 122, 120);
+    padding: 10px;
+    width: 100%;
+    border: 0px solid ;
+    
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px rgb(33, 80, 81);
+}
+#Benviar:hover {
+    background-color: rgb(141, 186, 184);
+    color: black;
+}
+  
+#Benviar:active {
+    background-color: rgb(141, 186, 184);
+    box-shadow: 0 5px rgb(23, 27, 42);
+    transform: translateY(4px);
+}
+
+/*Tabla*/
+
+table{
+    align-content: center;
+    width:100%;
+}
+
+.TablaCompras {
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.TablaCompras .ContenidoTabla{
+    align-content: center;
+}
+
+.TablaCompras .TituloTabla{
+    text-align: center;
+    margin-bottom: 10px;
+}
+  
+.TablaCompras th, .TablaCompras td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+  
+.TablaCompras th {
+    background-color: rgba(23,37,42,0.7);
+    color: white;
+}
+
+.TablaCompras tr{
+    background-color: rgb(190, 218, 216)
+}
+  
+.TablaCompras tr:nth-child(even) {
+    background-color: rgb(141,186,184)
+}
+
+.TablaCompras th:nth-child(1),
+.TablaCompras td:nth-child(1) {
+    width: 40%;
+}
+  
+.TablaCompras th:nth-child(2),
+.TablaCompras td:nth-child(2) {
+    width: 20%;
+}
+  
+.TablaCompras th:nth-child(3),
+.TablaCompras td:nth-child(3) {
+    width: 25%;
+}
+  
+.TablaCompras th:nth-child(4),
+.TablaCompras td:nth-child(4) {
+    width: 15%;
+}

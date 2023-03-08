@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DEF2F1;
+}
+
+.seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form { 
+    width: 38%;
+    margin: auto;
+    margin-top: 3%;
+    background-color: #5C9A98;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+form h3 {
+    text-align: center;
+    color: #215051;
+    font-size: 50px;
+    margin-bottom: 5%;
+    color: #EEF9F8;
+}
+
+form label {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 20px;
+    color: #EEF9F8;
+    font-size: 25px;
+}
+
+form .entrada {
+    width: 55%;
+    background-color: #DEF2F1;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+}
+
+form .btn{
+    background: #D6EAE8;
+	display: block;
+	width: 40%;
+    height: 80%;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 70px;
+	cursor: pointer;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    margin: auto !important;
+    margin-top: 15px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.5s;
+    position: relative;
+	overflow: hidden;
+   
+}
+
+form .btn span:hover{
+    color: #D6EAE8;
+    transition: all 0.5s;
+}
+
+form .btn span{
+    color: #17252A;
+    text-decoration: none;
+    position: relative;
+	z-index: 2;
+}
+
+form .btn span a{
+    text-decoration: none;
+    color: #17252A;
+}
+form .fa-solid{
+    padding: 0 5px;
+}
+
+form .btn::after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(-100% - 80px);
+	border-bottom: 80px solid #2B7A78;
+	border-right: 80px solid transparent;
+	transition: .4s ease-in-out all;
+}
+
+form .btn:hover::after {
+	left: 0;
+}
+
+form .registrarse, form .iniciar{
+    text-align: center;
+    font-size: 18px;
+    color: #DEF2F1;
+    font-weight: bold;
+}
+
+form .registrarse a, form .iniciar a{
+    color: #FEFFFF;
+    text-decoration: none;
+} 

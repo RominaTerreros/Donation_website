@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    vertical-align: baseline;
+}
+
+.header{
+    background-color: #DEF2F1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 20px;
+
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 80px;
+    width: auto;
+    transition: all 0.5s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.1);
+}
+
+.header .navbar-links{
+    list-style: none;
+}
+
+.header .navbar-links li{
+    display: inline-block;
+    padding: 0 10px;
+    transition: all 0.3s;
+}
+
+.header .navbar-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .navbar-links > li ul{
+    display: none;
+    
+}
+
+.header .navbar-links > li ul a{
+    font-size: 18px;
+}
+
+
+.header .navbar-links > li:hover ul{
+    display: block;
+    position: absolute;
+    background-color: #DEF2F1;
+    width: 185%;
+}
+
+.header .navbar-links > li:hover{
+    position: relative;
+}
+
+.header .navbar-links a{
+    font-size: 20px;
+    color: #17252A;
+    text-decoration: none;
+}
+
+.header .navbar-links a:hover{
+    color: #2B7A78;
+}
+
+.header .btn{
+    
+    background: #2B7A78;
+	display: block;
+	width: 10%;
+    height: 80%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 70px;
+	cursor: pointer;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.5s;
+    position: relative;
+	overflow: hidden;
+   
+}
+
+.header .btn span:hover{
+    color: #D6EAE8;
+    transition: all 0.5s;
+}
+
+.header .btn span{
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+	z-index: 2;
+}
+
+.header .btn a{
+    text-decoration: none;
+}
+.header .fa-solid{
+    padding: 0 5px;
+}
+
+.header .btn::after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(-100% - 80px);
+	border-bottom: 80px solid #215051;
+	border-right: 80px solid transparent;
+	transition: .4s ease-in-out all;
+}
+
+.header .btn:hover::after {
+	left: 0;
+}
+
+.footer{
+    background-color: #215051;
+    width: 100%;
+    margin: auto;
+}
+
+.footer h2{
+    font-size: 40px;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin: auto;
+    color: #EEF9F8;
+    text-align: center;
+}
+
+.box-container3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-container3 .box3 {
+    width: 270px;
+    text-align: center;
+    margin: 15px 20px;
+}
+
+.box-container3 .box3 a {
+    font-size: 20px;
+    padding-top: 10px;
+    color: #D6EAE8;
+    transition: all 0.3s;
+    text-decoration: none !important;
+}
+
+.box-container3 .box3 a:hover{
+    transform: scale(1.1);
+}
+
+.box-container3 .box3 p {
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+    margin: 5px;
+}
+
+.footer .derechos{
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 10px;
+}

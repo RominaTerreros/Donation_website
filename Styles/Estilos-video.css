@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:wght@300&display=swap');
+
+body {
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    /*padding: 60px 0;*/
+}
+
+.container.gallery-container {
+    background-color: #8DBAB8;
+    color: #35373a;
+    min-height: 100vh;
+    /*border-radius: 20px;*/
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    /*box-sizing: content-box;*/
+    /*padding: 100px;*/
+}
+
+.gallery-container h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.video {
+  width: 100%;
+  max-width: 560px;
+  height: 0;
+  padding-bottom: 27%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.video iframe {
+  width: 560px;
+  height: 315px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .video {
+    max-width: 100%;
+    padding-bottom: 75%;
+  }
+}
+
+.frame {
+  border: 1.5px solid black;
+  padding: 8px;
+  margin-bottom: 30px;
+  background: #D6EAE8;
+}
+
+.paginacion{
+    margin: 20px 0;
+}
+
+.paginacion ul{
+    list-style: none;
+    text-align: center;
+}
+
+.paginacion ul li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.paginacion ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #024959;
+    text-decoration: none;
+}
+
+.paginacion ul li a:hover{
+    background: #037E8C;
+}
+
+.paginacion ul li .active{
+    background: #037E8C;
+    font-weight: bold;
+}

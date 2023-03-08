@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:wght@300&display=swap');
+
+/***/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    vertical-align: baseline;
+}
+/**---*/
+.header{
+    background-color: #DEF2F1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 20px;
+
+}
+/**---*/
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+/**---*/
+.header .logo img{
+    height: 80px;
+    width: auto;
+    transition: all 0.5s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.1);
+}
+
+.header .navbar-links{
+    list-style: none;
+}
+
+.header .navbar-links li{
+    display: inline-block;
+    padding: 0 10px;
+    transition: all 0.3s;
+}
+
+.header .navbar-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .navbar-links > li ul{
+    display: none;
+    
+}
+
+.header .navbar-links > li ul a{
+    font-size: 18px;
+}
+
+
+.header .navbar-links > li:hover ul{
+    display: block;
+    position: absolute;
+    background-color: #DEF2F1;
+    width: 185%;
+}
+
+.header .navbar-links > li:hover{
+    position: relative;
+}
+
+.header .navbar-links a{
+    font-size: 20px;
+    color: #17252A;
+    text-decoration: none;
+}
+
+.header .navbar-links a:hover{
+    color: #2B7A78;
+}
+
+.header .btn{
+    
+    background: #2B7A78;
+	display: block;
+	width: 10%;
+    height: 80%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 70px;
+	cursor: pointer;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.5s;
+    position: relative;
+	overflow: hidden;
+   
+}
+
+.header .btn span:hover{
+    color: #D6EAE8;
+    transition: all 0.5s;
+}
+
+.header .btn span{
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+	z-index: 2;
+}
+
+.header .fa-solid{
+    padding: 0 5px;
+}
+
+.header .btn::after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(-100% - 80px);
+	border-bottom: 80px solid #215051;
+	border-right: 80px solid transparent;
+	transition: .4s ease-in-out all;
+}
+
+.header .btn:hover::after {
+	left: 0;
+}
+
+.content_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background: url("https://www.hogarmania.com/archivos/201911/ropa-listado-belleza-848x477x80xX.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.content_header h1{
+  margin-top: 5px;
+  font-size: 70px;
+}
+
+body {
+    text-align: center;
+
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titulo1 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0c0c0c;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: black;
+    padding: 0 150px;
+}
+
+.contenido {
+  padding: 60px 0;
+  background-color: #D4EBEA !important;
+}
+
+.contenido h3 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0c0c0c;
+}
+
+.cat {
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #2B7A78;
+  width: 60%;
+  margin-top: 30px;
+  margin-left: 300px;
+  margin-block-end: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+  padding: 30px 0;
+}
+
+.cat  p{
+  color: aliceblue;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.cat  li{
+  color: aliceblue;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.seccion {
+  background-color: #5C9A98;
+  padding: 60px 0;
+}
+
+#seccM{
+  background-color: #8DBAB8 !important;
+}
+
+.seccion .g1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  text-align: center;
+}
+
+.seccion .g1 .box video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion .g1 .envio  {
+  text-align: center;
+}
+.seccion .g1 .envio h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.seccion .g1 .envio h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 22px;
+  
+}
+
+.seccion .form-campana label{
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.seccion label{
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.seccion .g1 .envio .btn {
+  background: #2B7A78;
+	display: block;
+	width: 30%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 70px;
+	cursor: pointer;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+    margin: auto;
+    margin-left: 200px;
+    margin-right: 10px;
+    transition: all 0.5s;
+    position: relative;
+	overflow: hidden;
+
+}
+.seccion .g1 .envio .btn span:hover{
+  color: #D6EAE8;
+  transition: all 0.5s;
+}
+
+.seccion .g1 .envio .btn span{
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+z-index: 2;
+}
+
+.seccion .g1 .envio .fa-solid{
+  padding: 0 5px;
+}
+
+.seccion .g1 .envio .btn::after {
+content: "";
+width: 100%;
+position: absolute;
+z-index: 1;
+top: 0;
+left: calc(-100% - 80px);
+border-bottom: 80px solid #BEDAD8;
+border-right: 80px solid transparent;
+transition: .4s ease-in-out all;
+}
+
+.seccion .g1 .envio .btn:hover::after {
+left: 0;
+}
+
+@media (max-width: 768px) {
+    p {
+        padding: 0 50px;
+    }
+    .title{
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+/*imagen fondo - donaciones de muebles*/
+.div-imagen-fondo-mueble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background: url("https://azyamuebles.pe/wp-content/uploads/2021/02/5.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.div-imagen-fondo-mueble h1{
+  margin-top: 5px;
+  font-size: 70px;
+}
+
+/*imagen fondo - donaciones de medicamentos*/
+.div-imagen-fondo-medicamentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background: url("https://medlineplus.gov/images/Medicines_share.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.div-imagen-fondo-medicamentos h1{
+  margin-top: 5px;
+  font-size: 70px;
+}
+
+.seccion .g1 .form-donativo, .seccion .g1 .form-campana {
+  background-color: #2B7A78;
+  border-radius: 20px;
+}
+
+.seccion .g1 .form-campana .infoCamp{
+  padding: 0 15px;
+  color: #EEF9F8;
+  background-color: #215051;
+}
+form { 
+  margin: auto;
+  margin-top: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  border-radius: 20px;
+  justify-content: center;
+
+}
+
+
+form label {
+  display: inline-block;
+  width: 40%;
+  margin-bottom: 20px;
+  color: #060606;
+  font-size: 18px;
+}
+
+form .entrada {
+  width: 65%;
+  background-color: #DEF2F1;
+  border-radius: 4px;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+}
+
+form .btn{
+  background: #D6EAE8;
+display: block;
+width: 40%;
+  height: 80%;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+padding: 10px;
+border: none;
+border-radius: 70px;
+cursor: pointer;
+  font-family: 'Poppins', 'Golos Text', sans-serif;
+  margin: auto !important;
+  margin-top: 15px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all 0.5s;
+  position: relative;
+overflow: hidden;
+ 
+}
+
+form .btn span:hover{
+  color: #D6EAE8;
+  transition: all 0.5s;
+}
+
+form .btn span{
+  color: #17252A;
+  text-decoration: none;
+  position: relative;
+z-index: 2;
+}
+
+form .btn span a{
+  text-decoration: none;
+  color: #17252A;
+}
+form .fa-solid{
+  padding: 0 5px;
+}
+
+form .btn::after {
+content: "";
+width: 100%;
+position: absolute;
+z-index: 1;
+top: 0;
+left: calc(-100% - 80px);
+border-bottom: 80px solid #8DBAB8;
+border-right: 80px solid transparent;
+transition: .4s ease-in-out all;
+}
+
+form .btn:hover::after {
+left: 0;
+}
+
+
+.logo {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.tabla{
+  background-color: #DEF2F1;
+  justify-content: center;
+}
+
+table{
+  background-color: #DEF2F1;
+  height: 100px;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+  padding: 30px 0;
+}
+th {
+  font-style: italic;
+  font-size: 0.9em;
+  color: white;
+  font-weight: 500;
+  font:bold;
+  background: #215051;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+td {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: black;
+  font: bold;
+}
+
+

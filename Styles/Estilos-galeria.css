@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:wght@300&display=swap');
+
+body {
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font-family: 'Poppins', 'Golos Text', sans-serif;
+}
+
+.container.gallery-container {
+    background-color: #8DBAB8;
+    color: #35373a;
+    min-height: 100vh;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tz-gallery {
+    padding: 1em;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 5px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.frame {
+    border: 2px solid #215051;
+    padding: 8px;
+    margin-bottom: 20px;
+    background: #D6EAE8;
+    border-radius: 15px;
+}
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+    height: 30vh;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+.paginacion{
+    margin: 20px 0;
+}
+
+.paginacion ul{
+    list-style: none;
+    text-align: center;
+}
+
+.paginacion ul li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.paginacion ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #024959;
+    text-decoration: none;
+}
+
+.paginacion ul li a:hover{
+    background: #037E8C;
+}
+
+.paginacion ul li .active{
+    background: #037E8C;
+    font-weight: bold;
+}
